@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* Paleta tirada da logo: bordô das letras, dourado da balança, marfim do fundo */
+@theme {
+  --color-vinho: #4a0e1a;
+  --color-vinho-escuro: #330910;
+  --color-bordo: #74182a;
+  --color-ouro: #9a6d36;
+  --color-ouro-claro: #dcb983;
+  --color-marfim: #f7f1e8;
+  --color-papel: #fffdf9;
+  --color-tinta: #1f1114;
+  --color-tinta-suave: #4d3a3e;
+  --color-linha: #dccab0;
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-jost), "Jost", system-ui, sans-serif;
+}
+
+html {
+  scroll-padding-top: 5.5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-marfim);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: var(--color-ouro-claro);
+  color: var(--color-vinho-escuro);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ouro);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.fio-dourado path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: desenhar 2.6s cubic-bezier(0.65, 0, 0.35, 1) 0.3s forwards;
+}
+
+.medalhao {
+  opacity: 0;
+  transform: scale(0.96);
+  animation: surgir 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+}
+
+@keyframes desenhar {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes surgir {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fio-dourado path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  .medalhao {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
