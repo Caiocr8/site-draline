@@ -6,9 +6,9 @@ import { site, whatsappLink } from "@/lib/site";
 import { IconeWhatsApp } from "./icons";
 
 const links = [
-  { href: "#atuacao", rotulo: "Áreas de atuação" },
   { href: "#sobre", rotulo: "Sobre" },
-  { href: "#atendimento", rotulo: "Como funciona" },
+  { href: "#atendimento", rotulo: "Como atuo" },
+  { href: "#atuacao", rotulo: "Áreas de atuação" },
   { href: "#contato", rotulo: "Contato" },
 ];
 
@@ -28,8 +28,10 @@ export function Cabecalho() {
             priority
           />
           <span className="flex flex-col leading-none">
-            <span className="font-display text-[1.35rem] font-semibold text-vinho">{site.nome}</span>
-            <span className="mt-1 text-[0.7rem] font-semibold tracking-[0.3em] text-ouro">ADVOGADA</span>
+            <span className="font-display text-[1.35rem] font-semibold text-vinho">{site.marca}</span>
+            <span className="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-ouro">
+              Advogada · {site.oab}
+            </span>
           </span>
         </a>
 
@@ -50,7 +52,7 @@ export function Cabecalho() {
             className="inline-flex items-center gap-2 rounded-sm bg-vinho px-4 py-2.5 text-sm font-medium text-papel transition-colors hover:bg-bordo"
           >
             <IconeWhatsApp className="h-4 w-4" />
-            Agendar pelo WhatsApp
+            Agendar consulta
           </a>
         </nav>
 
@@ -98,7 +100,7 @@ export function Cabecalho() {
             className="mt-5 flex items-center justify-center gap-2 rounded-sm bg-vinho px-4 py-3.5 font-medium text-papel"
           >
             <IconeWhatsApp className="h-5 w-5" />
-            Agendar pelo WhatsApp
+            Agendar consulta
           </a>
         </nav>
       )}
