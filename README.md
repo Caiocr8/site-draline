@@ -55,7 +55,7 @@ Serve para colocar o site no ar agora. O remetente será `onboarding@resend.dev`
 
 ### Modo 2 — profissional, com domínio próprio (recomendado)
 
-Com um domínio (ex.: `alinemariaalmeida.adv.br`), o e-mail sai de `contato@seudominio`,
+Com um domínio (ex.: `alinemariaalmeida.adv.br`), o e-mail sai de `contato@alinemariaalmeida.adv.br`,
 pode ir para qualquer caixa e cai menos no spam. Também habilita a confirmação automática
 para o cliente.
 
@@ -76,7 +76,7 @@ para o cliente.
 3. Clique em *Verify DNS Records* e aguarde ficar **Verified** (minutos a algumas horas).
 4. Atualize as variáveis (no `.env.local` e na Vercel):
    ```env
-   CONTACT_FROM_EMAIL="Dra. Aline Maria <contato@seudominio.com.br>"
+   CONTACT_FROM_EMAIL="Dra. Aline Maria <contato@alinemariaalmeida.adv.br>"
    CONTACT_CONFIRMACAO=sim
    ```
    O endereço `contato@` não precisa existir como caixa de e-mail: as respostas vão para
