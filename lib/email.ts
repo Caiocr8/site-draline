@@ -88,7 +88,7 @@ function diagnosticar(status: number, corpo: string) {
   if (/domain is not verified|not verified/i.test(corpo))
     return "O domínio de CONTACT_FROM_EMAIL ainda não foi verificado em resend.com/domains (confira os registros DNS).";
   if (status === 422)
-    return 'Algum campo foi recusado. Confira o formato de CONTACT_FROM_EMAIL: "Nome <contato@seudominio.com.br>".';
+    return 'Algum campo foi recusado. Confira o formato de CONTACT_FROM_EMAIL: "Nome <contato@alinemariaalmeida.adv.br>".';
   if (status === 429) return "Limite de envios do Resend atingido. Aguarde alguns minutos.";
   return "Veja a mensagem acima e o painel resend.com/emails.";
 }

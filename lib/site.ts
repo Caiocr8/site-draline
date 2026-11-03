@@ -24,8 +24,7 @@ export const site = {
   cidadeExtenso: "Parnamirim — Rio Grande do Norte",
   horario: "Segunda a sexta, das 8h às 18h",
 
-  // TODO: trocar pelo domínio definitivo quando ele for registrado
-  url: "https://www.seudominio.com.br",
+  url: "https://alinemariaalmeida.adv.br",
 };
 
 export const whatsappLink = (mensagem = site.whatsappMensagem) =>
