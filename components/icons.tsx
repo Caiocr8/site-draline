@@ -122,3 +122,76 @@ export function IconeLocal(props: P) {
     </svg>
   );
 }
+
+/* Balança — usada como ornamento entre fios dourados, como nas artes */
+export function IconeBalanca(props: P) {
+  return (
+    <svg viewBox="0 0 48 48" aria-hidden="true" {...props}>
+      <g {...linha}>
+        <path d="M24 6v34M16 42h16M24 6l-1.5 2.5h3z" />
+        <path d="M9 13h30" />
+        <path d="M12 13l-5.5 12h11zM36 13l-5.5 12h11z" />
+        <path d="M6.5 25a5.5 4 0 0 0 11 0M30.5 25a5.5 4 0 0 0 11 0" />
+      </g>
+    </svg>
+  );
+}
+
+/* Pilares da "essência profissional" */
+export function IconeLivro(props: P) {
+  return (
+    <svg viewBox="0 0 48 48" aria-hidden="true" {...props}>
+      <g {...linha}>
+        <path d="M24 13c-4-3-10-3.5-16-2.5v26c6-1 12-.5 16 2.5 4-3 10-3.5 16-2.5v-26c-6-1-12-.5-16 2.5z" />
+        <path d="M24 13v26" />
+      </g>
+    </svg>
+  );
+}
+
+export function IconeCoracaoMao(props: P) {
+  return (
+    <svg viewBox="0 0 48 48" aria-hidden="true" {...props}>
+      <g {...linha}>
+        <path d="M24 25s-8-4.6-8-10a4.3 4.3 0 0 1 8-2.2 4.3 4.3 0 0 1 8 2.2c0 5.4-8 10-8 10z" />
+        <path d="M5 31l6-3.5c2-1.2 4-1.2 6 0l4 2.2h6a2.5 2.5 0 0 1 0 5h-8" />
+        <path d="M27 34.7l9.5-5a2.6 2.6 0 0 1 3 4.2L29 41.5a5 5 0 0 1-4 .9L15 40l-5 2.5" />
+      </g>
+    </svg>
+  );
+}
+
+export function IconeEstrategia(props: P) {
+  return (
+    <svg viewBox="0 0 48 48" aria-hidden="true" {...props}>
+      <g {...linha}>
+        <circle cx="24" cy="24" r="16" />
+        <circle cx="24" cy="24" r="9" />
+        <circle cx="24" cy="24" r="2" />
+        <path d="M24 4v6M24 38v6M4 24h6M38 24h6" />
+      </g>
+    </svg>
+  );
+}
+
+export function IconeEscudo(props: P) {
+  return (
+    <svg viewBox="0 0 48 48" aria-hidden="true" {...props}>
+      <g {...linha}>
+        <path d="M24 5l15 5.5v11c0 9.5-6.4 17.4-15 21-8.6-3.6-15-11.5-15-21v-11z" />
+        <path d="M17 24l5 5 9-10" />
+      </g>
+    </svg>
+  );
+}
+
+export function IconeMonitor(props: P) {
+  return (
+    <svg viewBox="0 0 48 48" aria-hidden="true" {...props}>
+      <g {...linha}>
+        <rect x="6" y="9" width="36" height="24" rx="2" />
+        <path d="M18 41h12M24 33v8" />
+      </g>
+    </svg>
+  );
+}

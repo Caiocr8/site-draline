@@ -7,6 +7,7 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
   weight: ["500", "600", "700"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -18,20 +19,21 @@ const jost = Jost({
 });
 
 const descricao =
-  "Dra. Aline Maria Freire da Rocha Almeida, advogada em Direito de Família e Sucessões, Direito da Saúde, Direito Previdenciário e Direito do Trabalho. Atendimento presencial e online.";
+  "Dra. Aline Maria Freire da Rocha Almeida, advogada (OAB/RN 24.650), assistente social e mestre em Serviço Social. Direito de Família e Sucessões, Previdenciário, Saúde e Trabalho. Atendimento presencial em Parnamirim/RN e online em todo o Brasil.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.nome} | Advogada`,
+    default: `${site.nome} | Advogada em Parnamirim/RN`,
     template: `%s | ${site.nome}`,
   },
   description: descricao,
   openGraph: {
-    title: `${site.nome} | Advogada`,
+    title: `${site.nome} | ${site.slogan}`,
     description: descricao,
     locale: "pt_BR",
     type: "website",
+    siteName: `${site.nome} — ${site.descricaoMarca}`,
     images: [{ url: "/logo-medalhao.png", width: 900, height: 900 }],
   },
   icons: { icon: "/icon.png", apple: "/icon.png" },
