@@ -24,7 +24,7 @@ export const site = {
   cidadeExtenso: "Parnamirim — Rio Grande do Norte",
   horario: "Segunda a sexta, das 8h às 18h",
 
-  url: "https://alinemariaalmeida.adv.br",
+  url: "https://www.alinemariaalmeida.adv.br",
 };
 
 export const whatsappLink = (mensagem = site.whatsappMensagem) =>
